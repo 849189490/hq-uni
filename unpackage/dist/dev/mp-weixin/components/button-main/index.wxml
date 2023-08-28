@@ -1,0 +1,1 @@
+<view class="{{['data-v-997cc755', 'button-wrap', d]}}" disabled="{{e}}" bindtap="{{f}}"><block wx:if="{{$slots.d}}"><slot></slot></block><block wx:else><uni-icons wx:if="{{a}}" class="data-v-997cc755" u-i="997cc755-0" bind:__l="__l" u-p="{{a}}"/><view class="data-v-997cc755" style="{{'color:' + c}}">{{b}}</view></block></view>

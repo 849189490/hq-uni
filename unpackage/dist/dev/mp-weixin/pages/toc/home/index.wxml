@@ -1,0 +1,1 @@
+<view class="home-wrap"><view> 首页 {{a}}</view><button type="default" size="mini" bindtap="{{b}}">登录</button><button type="default" size="mini" bindtap="{{c}}">相机</button></view>

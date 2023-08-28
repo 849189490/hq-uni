@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/toc/home/index",
+    "pages/toc/my/index",
+    "pages/toc/login/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "华强金融",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "iconfontSrc": "static/iconfont/iconfont.ttf",
+    "list": [
+      {
+        "pagePath": "pages/toc/home/index",
+        "iconPath": "static/image/tabbar/homepage.png",
+        "selectedIconPath": "static/image/tabbar/homepage_hl.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/toc/my/index",
+        "iconPath": "static/image/tabbar/people.png",
+        "selectedIconPath": "static/image/tabbar/people_hl.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

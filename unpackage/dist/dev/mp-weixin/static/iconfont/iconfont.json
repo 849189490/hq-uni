@@ -1,0 +1,72 @@
+{
+  "id": "4202470",
+  "name": "hq-app",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7008912",
+      "name": "coupons_fill",
+      "font_class": "coupons_fill",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "7008946",
+      "name": "homepage_fill",
+      "font_class": "homepage_fill",
+      "unicode": "e702",
+      "unicode_decimal": 59138
+    },
+    {
+      "icon_id": "7008962",
+      "name": "mail_fill",
+      "font_class": "mail_fill",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "7008963",
+      "name": "manage_fill",
+      "font_class": "manage_fill",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "7008977",
+      "name": "other",
+      "font_class": "other",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    },
+    {
+      "icon_id": "7008978",
+      "name": "people_fill",
+      "font_class": "people_fill",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "7008995",
+      "name": "remind_fill",
+      "font_class": "remind_fill",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    },
+    {
+      "icon_id": "7008999",
+      "name": "scan",
+      "font_class": "scan",
+      "unicode": "e722",
+      "unicode_decimal": 59170
+    },
+    {
+      "icon_id": "7009013",
+      "name": "stealth_fill",
+      "font_class": "stealth_fill",
+      "unicode": "e72c",
+      "unicode_decimal": 59180
+    }
+  ]
+}

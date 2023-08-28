@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "登录",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "awesome-input": "../../../components/input/index",
+    "awesome-button-main": "../../../components/button-main/index",
+    "awesome-privacy-agreement": "../../../components/privacy-agreement/index"
+  }
+}

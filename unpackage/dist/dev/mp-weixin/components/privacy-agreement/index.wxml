@@ -1,0 +1,1 @@
+<view class="data-v-bf788ac4"><view class="radio data-v-bf788ac4" bindtap="{{d}}"><radio class="data-v-bf788ac4" style="transform:scale(0.8)" checked="{{a}}" catchtap="{{b}}"/> 我已阅读并同意 <block wx:for="{{c}}" wx:for-item="item" wx:key="c"><text class="privacy data-v-bf788ac4" catchtap="{{item.b}}">《{{item.a}}》</text></block></view></view>

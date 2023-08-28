@@ -1,0 +1,15 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-bc93c4a9 .uni-easyinput__content-input {
+  text-align: var(--4e6b50c4);
+}
+.data-v-bc93c4a9 .uni-easyinput__content-input .uni-input-wrapper {
+  font-size: 14px;
+}
+.data-v-bc93c4a9 .uni-icons {
+  font-size: 14px;
+}
+.right-text.data-v-bc93c4a9 {
+  color: #999;
+  margin-left: 12rpx;
+}

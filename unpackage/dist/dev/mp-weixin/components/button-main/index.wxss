@@ -1,0 +1,17 @@
+/* 水平间距 */
+/* 水平间距 */
+.button-wrap.data-v-997cc755 {
+  width: 90%;
+  min-width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background-color: #196099;
+  color: #fff;
+}
+.disabled.data-v-997cc755 {
+  color: #999;
+}

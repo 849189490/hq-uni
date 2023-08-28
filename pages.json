@@ -1,0 +1,84 @@
+{
+  "pages": [
+    // {
+    //   "path": "pages/index/index",
+    //   "style": {
+    //     "navigationBarTitleText": "跳转"
+    //   }
+    // },
+    {
+      "path": "pages/toc/home/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/toc/my/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/toc/login/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "iconfontSrc": "static/iconfont/iconfont.ttf", // app tabbar 字体.ttf文件路径 app 3.4.4+
+    "list": [
+      {
+        "pagePath": "pages/toc/home/index",
+        "iconPath": "static/image/tabbar/homepage.png",
+        "selectedIconPath": "static/image/tabbar/homepage_hl.png",
+        "text": "首页"
+        // "iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+        //   "text": "\ue102",
+        //   "selectedText": "\ue103",
+        //   "fontSize": "17px",
+        //   "color": "#000000",
+        //   "selectedColor": "#0000ff"
+        // }
+      }, {
+        "pagePath": "pages/toc/my/index",
+        "iconPath": "static/image/tabbar/people.png",
+        "selectedIconPath": "static/image/tabbar/people_hl.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "华强金融",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  },
+  "condition": { //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [{
+      "name": "", //模式名称
+      "path": "", //启动页面，必选
+      "query": "" //启动参数，在页面的onLoad函数里面得到
+    }]
+  }
+  // "easycom": {
+  //   "custom": {
+  //     "Awesome(.*)": "@/components/$1/index.vue"
+  //   }
+  // }
+}
