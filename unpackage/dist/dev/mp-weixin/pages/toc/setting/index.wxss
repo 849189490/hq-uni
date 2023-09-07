@@ -1,0 +1,46 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-b87a6dae .uni-page-head__title {
+  max-width: 60%;
+  margin: 0 auto;
+  color: #323233;
+  font-weight: 500;
+  font-size: 16px;
+}
+.data-v-b87a6dae .uni-group {
+  margin-top: 0 !important;
+}
+.data-v-b87a6dae .uni-group__content {
+  padding: 0;
+}
+.data-v-b87a6dae .uni-page-head {
+  background-color: #fff !important;
+}
+.data-v-b87a6dae .uni-button:after {
+  border: none !important;
+}
+.setting.data-v-b87a6dae {
+  font-size: 14px;
+  font-family: "PingFangSC-Regular";
+  color: #323233;
+}
+.border.data-v-b87a6dae {
+  border-bottom: 1px solid #eee;
+}
+.item.data-v-b87a6dae {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  line-height: 24px;
+}
+.btn.data-v-b87a6dae {
+  font-size: 14px;
+  margin-top: 20px;
+  background: white;
+  border-color: white;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}

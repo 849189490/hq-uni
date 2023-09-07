@@ -42,5 +42,5 @@ export {
   // AwesomeLoadList,
   AwesomePopup,
   // AwesomeAuthorSign,
-  AwesomePrivacyAgreement
+  AwesomePrivacyAgreement,
 }

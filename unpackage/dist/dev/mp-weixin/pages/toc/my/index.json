@@ -1,5 +1,8 @@
 {
-  "navigationBarTitleText": "我的",
+  "navigationBarTitleText": "贷款个人中心",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-icons": "../../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "my-avatar": "./myAvatar"
+  }
 }

@@ -16,7 +16,7 @@
     {
       "path": "pages/toc/my/index",
       "style": {
-        "navigationBarTitleText": "我的",
+        "navigationBarTitleText": "贷款个人中心",
         "enablePullDownRefresh": false
       }
     },
@@ -26,11 +26,80 @@
         "navigationBarTitleText": "登录",
         "enablePullDownRefresh": false
       }
-    }
-  ],
+    },
+		{
+			"path": "pages/toc/setting/index",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/toc/noLoginHome/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/toc/quota/loanRecordList",
+			"style": {
+				"navigationBarTitleText": "借款记录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/toc/quota/quotaRepaymentRecord",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "还款记录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/toc/quota/payPlan",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "还款计划",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/toc/quota/myCard",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "我的银行卡",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/toc/myCard/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "我的合同",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/toc/settleProve/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "结清证明",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/toc/bill/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "发票服务",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
   "tabBar": {
     "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "selectedColor": "#1989FA",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "height": "50px",
@@ -60,9 +129,9 @@
     ]
   },
   "globalStyle": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "华强金融",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    // "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "app-plus": {
       "background": "#efeff4"

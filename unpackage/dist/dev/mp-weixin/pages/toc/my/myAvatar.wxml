@@ -1,0 +1,1 @@
+<view class="my-avatar data-v-3620af33"><van-nav-bar wx:if="{{d}}" class="data-v-3620af33" u-s="{{['right']}}" bindclickLeft="{{b}}" bindclickRight="{{c}}" u-i="3620af33-0" bind:__l="__l" u-p="{{d}}"><van-icon class="data-v-3620af33" u-i="3620af33-1,3620af33-0" bind:__l="__l" u-p="{{a}}" slot="right"/></van-nav-bar></view>

@@ -95,5 +95,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-bc93c4a9"], ["__file", "/Users/liyang/Desktop/hq/components/input/index.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-bc93c4a9"], ["__file", "/Users/mbp/Documents/item/HBuilderX/hq-uni/components/input/index.vue"]]);
 wx.createComponent(Component);

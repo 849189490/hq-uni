@@ -3,7 +3,8 @@ import { responseHandle, rejectHandle } from '../utils'
 import type { Responce } from '../types'
 import { processRequest } from '@/utils/encrypt'
 import qs from 'qs'
-const baseURL = 'https://loan.szhqxd.com'
+// const baseURL = 'https://loan.szhqxd.com'
+const baseURL = ''
 const baseOptions : UniApp.RequestOptions = {
   method: 'POST',
   header: {

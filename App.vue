@@ -16,7 +16,9 @@
     // },
     // toc
     globalData: {
-      sceneID: 'S20220104144928197R3452008444'
+      sceneID: 'S20220104144928197R3452008444',
+			['GAMMA-UC-LOGIN-TYPE']: 'loginToC'
+			
     }
 	}
 </script>

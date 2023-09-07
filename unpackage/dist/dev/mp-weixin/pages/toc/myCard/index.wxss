@@ -1,0 +1,10 @@
+
+.text {
+	display: flex;
+}
+.span {
+	color: #9b9b9b;
+	margin: 20px auto;
+	height: 23px;
+	display: inline-block;
+}

@@ -1,0 +1,13 @@
+/* 水平间距 */
+/* 水平间距 */
+.root.data-v-2276cd9c {
+  display: flex;
+}
+.text.data-v-2276cd9c {
+  color: #9b9b9b;
+  margin: 20px auto;
+}
+.span.data-v-2276cd9c {
+  height: 23px;
+  display: inline-block;
+}

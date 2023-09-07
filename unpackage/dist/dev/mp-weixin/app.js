@@ -5,6 +5,13 @@ if (!Math) {
   "./pages/toc/home/index.js";
   "./pages/toc/my/index.js";
   "./pages/toc/login/index.js";
+  "./pages/toc/setting/index.js";
+  "./pages/toc/noLoginHome/index.js";
+  "./pages/toc/quota/loanRecordList.js";
+  "./pages/toc/quota/quotaRepaymentRecord.js";
+  "./pages/toc/quota/payPlan.js";
+  "./pages/toc/quota/myCard.js";
+  "./pages/toc/myCard/index.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -23,10 +30,11 @@ const _sfc_main = {
   // },
   // toc
   globalData: {
-    sceneID: "S20220104144928197R3452008444"
+    sceneID: "S20220104144928197R3452008444",
+    ["GAMMA-UC-LOGIN-TYPE"]: "loginToC"
   }
 };
-const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "/Users/liyang/Desktop/hq/App.vue"]]);
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "/Users/mbp/Documents/item/HBuilderX/hq-uni/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   return {

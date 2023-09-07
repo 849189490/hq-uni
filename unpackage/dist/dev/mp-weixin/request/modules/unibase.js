@@ -2,7 +2,7 @@
 const common_vendor = require("../../common/vendor.js");
 const request_utils = require("../utils.js");
 const utils_encrypt = require("../../utils/encrypt.js");
-const baseURL = "https://loan.szhqxd.com";
+const baseURL = "";
 const baseOptions = {
   method: "POST",
   header: {

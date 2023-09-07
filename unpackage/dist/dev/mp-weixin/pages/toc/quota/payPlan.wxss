@@ -1,0 +1,95 @@
+/* 水平间距 */
+/* 水平间距 */
+.pay-plan-wrap.data-v-692d2f80 {
+  overflow-y: auto;
+  position: relative;
+  height: calc(100% - 46px);
+  font-size: 14px;
+}
+.pay-plan-wrap .pay-plan.data-v-692d2f80 {
+  height: 100%;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+.pay-plan-wrap .pay-plan .head.data-v-692d2f80 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0 10px;
+}
+.pay-plan-wrap .pay-plan .head.data-v-692d2f80 .drop-value .drop-label {
+  font-size: 20px;
+  font-weight: 600;
+}
+.pay-plan-wrap .pay-plan .head.data-v-692d2f80 .drop-value .drop-icon {
+  color: #2b4cdd;
+}
+.pay-plan-wrap .pay-plan .head-total.data-v-692d2f80 {
+  font-size: 14px;
+  color: #969799;
+}
+.pay-plan-wrap .pay-plan .head-total > span.data-v-692d2f80 {
+  color: #2b4cdd;
+}
+.pay-plan-wrap .pay-plan .repayment-head.data-v-692d2f80 {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 0 -10px 16px;
+  color: #4a4a4a;
+  background: #396899;
+}
+.pay-plan-wrap .pay-plan .repayment-head .repayment-head-left.data-v-692d2f80 {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.pay-plan-wrap .pay-plan .repayment-head .repayment-head-left i.data-v-692d2f80 {
+  margin-left: 0.25rem;
+  color: #aaa;
+}
+.pay-plan-wrap .pay-plan .repayment-head .repayment-head-right.data-v-692d2f80 {
+  line-height: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  flex-direction: column;
+}
+.pay-plan-wrap .pay-plan .repayment-head .repayment-head-right .repayment-head-right-num.data-v-692d2f80 {
+  color: #69a5ff;
+}
+.pay-plan-wrap .pay-plan .data-pick.data-v-692d2f80 {
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.pay-plan-wrap .pay-plan .data-pick .data-pick-btn.data-v-692d2f80 {
+  background: #fbf9fe;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #828282;
+}
+.pay-plan-wrap .pay-plan .repayment-footer.data-v-692d2f80 {
+  text-align: center;
+  font-size: 0.875rem;
+  margin: 1rem 0;
+  color: #9b9b9b;
+}
+.pay-plan-wrap .pay-plan .repayment-footer.repayment-footer1.data-v-692d2f80 {
+  margin-top: 0.9375rem;
+}
+.pay-plan-wrap .pay-plan .btnApply.data-v-692d2f80 {
+  background-color: #0D436F;
+  border-color: #0D436F;
+  border-radius: 25px;
+  margin: 30px 0;
+}

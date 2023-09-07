@@ -31,5 +31,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-bf788ac4"], ["__file", "/Users/liyang/Desktop/hq/components/privacy-agreement/index.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-bf788ac4"], ["__file", "/Users/mbp/Documents/item/HBuilderX/hq-uni/components/privacy-agreement/index.vue"]]);
 wx.createComponent(Component);

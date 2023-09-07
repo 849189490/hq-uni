@@ -100,7 +100,7 @@
 		align-items: center;
 		padding-left: 15px;
 		height: 40px;
-		background-color: #eee;
+		background-color: #f5f5f5;
 		font-weight: normal;
 		color: #666;
 	}

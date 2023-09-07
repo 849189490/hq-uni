@@ -48,5 +48,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-997cc755"], ["__file", "/Users/liyang/Desktop/hq/components/button-main/index.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-997cc755"], ["__file", "/Users/mbp/Documents/item/HBuilderX/hq-uni/components/button-main/index.vue"]]);
 wx.createComponent(Component);

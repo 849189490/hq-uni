@@ -2,17 +2,25 @@
   "pages": [
     "pages/toc/home/index",
     "pages/toc/my/index",
-    "pages/toc/login/index"
+    "pages/toc/login/index",
+    "pages/toc/setting/index",
+    "pages/toc/noLoginHome/index",
+    "pages/toc/quota/loanRecordList",
+    "pages/toc/quota/quotaRepaymentRecord",
+    "pages/toc/quota/payPlan",
+    "pages/toc/quota/myCard",
+    "pages/toc/myCard/index",
+    "pages/toc/settleProve/index",
+    "pages/toc/bill/index"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "华强金融",
-    "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
     "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "selectedColor": "#1989FA",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "iconfontSrc": "static/iconfont/iconfont.ttf",
