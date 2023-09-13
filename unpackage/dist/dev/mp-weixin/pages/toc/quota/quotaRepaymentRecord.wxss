@@ -39,20 +39,25 @@
 .repayment-list.data-v-d6b7f0bb {
   padding: 0.9375rem;
 }
-.repayment-list .repayment-item.data-v-d6b7f0bb {
+.repayment-list.data-v-d6b7f0bb .uni-collapse {
+  border-radius: 13px;
+  background-color: unset;
+}
+.repayment-list.data-v-d6b7f0bb .uni-collapse .repayment-item {
   border-radius: 13px;
   overflow: hidden;
   box-sizing: border-box;
   background: #ffffff;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
-.repayment-list .repayment-item-child.data-v-d6b7f0bb {
+.repayment-list.data-v-d6b7f0bb .uni-collapse .repayment-item-child {
   font-size: 12px;
-  padding: 2px 0;
+  padding: 0px 10px;
+  margin: 5px;
 }
-.repayment-list .repayment-item-day.data-v-d6b7f0bb {
+.repayment-list.data-v-d6b7f0bb .uni-collapse .repayment-item-day {
   font-size: 12px;
-  padding: 0 16px 8px;
+  padding: 10px 15px;
 }
 .data-pick.data-v-d6b7f0bb {
   background: #ffffff;

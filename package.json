@@ -6,11 +6,14 @@
     "dayjs": "^1.11.9",
     "js-cookie": "^3.0.5",
     "jsencrypt": "^3.3.2",
+    "mockjs": "^1.1.0",
+    "moment": "^2.29.4",
     "qs": "^6.11.2",
     "vconsole": "^3.15.1"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.3",
-    "@types/qs": "^6.9.7"
+    "@types/qs": "^6.9.7",
+    "uni-mini-router": "^0.1.4"
   }
 }

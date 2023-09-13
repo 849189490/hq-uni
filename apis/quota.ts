@@ -10,3 +10,13 @@ export function repayQuery(data?: any) {
     isEncrypt: true
   });
 }
+// 还款记录
+export function orderRePaymentFlowSchedule(data?: any) {
+  return request({
+    url: "/gamma-uc/btp/orderRePaymentFlowSchedule",
+    method: "POST",
+		data
+  }, {
+    isEncrypt: true
+  });
+}

@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"path": "pages/toc/noLoginHome/index",
+			"path": "pages/toc/no-login-home/index",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -73,7 +73,7 @@
 			}
 		},
 		{
-			"path" : "pages/toc/myCard/index",
+			"path" : "pages/toc/my-contract/index",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "我的合同",
@@ -95,8 +95,35 @@
 				"navigationBarTitleText": "发票服务",
 				"enablePullDownRefresh": false
 			}
-		}
-	],
+		},
+		{
+			"path" : "pages/toc/show-pdf/index",
+			"style" :                                                                                    
+			{
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+			}
+			
+	}
+    ,{
+            "path" : "pages/toc/pay-plan/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/toc/quota-repayment-record/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "tabBar": {
     "color": "#7A7E83",
     "selectedColor": "#1989FA",

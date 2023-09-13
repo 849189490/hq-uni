@@ -10,7 +10,6 @@
 					<picker class="picker" mode="date" :value="date" fields="year" @change="bindDateChange($event)" @cancel="bindDateCancel($event)">
 						<view class="uni-input">{{date}}</view>
 						<uni-icons type="bottom" size="15" color="#aaa"/>
-
 					</picker>
 				</view>
 			</view>
@@ -24,21 +23,19 @@
 		<view class="box">
 			<view class="repayment-list" v-if="currentYearList.length">
 				<view class="repayment-box">
-					<uni-collapse v-model="activeNames">
+						<uni-collapse v-model="activeNames">
 						<view v-for="(item, i) in currentYearList" :key="i" class="repayment-item">
-							<uni-collapse-item :title="'¥' + item.recAmt | toThousands" :value="item.recycleGenerateMode | formatPayType">
-								<view class="content">
-									<view class="repayment-item-child" v-if="item.repaidAmtPri && Number(item.repaidAmtPri) !== 0">实还本金：¥{{item.repaidAmtPri}}</view>
-									<view class="repayment-item-child" v-if="item.repaidAmtInt && Number(item.repaidAmtInt) !== 0">实还利息：¥{{item.repaidAmtInt}}</view>
-									<view class="repayment-item-child" v-if="item.repaidAmtOdp && Number(item.repaidAmtOdp) !== 0">实还罚息：¥{{item.repaidAmtOdp}}</view>
-									<view class="repayment-item-child" v-if="item.pretermPri && Number(item.pretermPri) !== 0">提前还款本金：¥{{item.pretermPri}}</view>
-									<view class="repayment-item-child" v-if="item.pretermInt && Number(item.pretermInt) !== 0">提前还款利息：¥{{item.pretermInt}}</view>
-									<view class="repayment-item-child" v-if="item.recGrt && Number(item.recGrt) !== 0">还款担保费：¥{{item.recGrt}}</view>
-									<view class="repayment-item-child" v-if="item.recGrtOdp && Number(item.recGrtOdp) !== 0">还款滞纳金：¥{{item.recGrtOdp}}</view>
-									<view class="repayment-item-child" v-if="item.pretermTra && Number(item.pretermTra) !== 0">提前还款违约金：¥{{item.pretermTra}}</view>
-								</view>
+							<uni-collapse-item  :title="'¥' + item.recAmt || toThousands" :value="item.recycleGenerateMode || formatPayType">
+								<view class="repayment-item-child" v-if="item.repaidAmtPri && Number(item.repaidAmtPri) !== 0">实还本金：¥{{item.repaidAmtPri}}</view>
+								<view class="repayment-item-child" v-if="item.repaidAmtInt && Number(item.repaidAmtInt) !== 0">实还利息：¥{{item.repaidAmtInt}}</view>
+								<view class="repayment-item-child" v-if="item.repaidAmtOdp && Number(item.repaidAmtOdp) !== 0">实还罚息：¥{{item.repaidAmtOdp}}</view>
+								<view class="repayment-item-child" v-if="item.pretermPri && Number(item.pretermPri) !== 0">提前还款本金：¥{{item.pretermPri}}</view>
+								<view class="repayment-item-child" v-if="item.pretermInt && Number(item.pretermInt) !== 0">提前还款利息：¥{{item.pretermInt}}</view>
+								<view class="repayment-item-child" v-if="item.recGrt && Number(item.recGrt) !== 0">还款担保费：¥{{item.recGrt}}</view>
+								<view class="repayment-item-child" v-if="item.recGrtOdp && Number(item.recGrtOdp) !== 0">还款滞纳金：¥{{item.recGrtOdp}}</view>
+								<view class="repayment-item-child" v-if="item.pretermTra && Number(item.pretermTra) !== 0">提前还款违约金：¥{{item.pretermTra}}</view>
 							</uni-collapse-item>
-							<view class="repayment-item-day">还款日：{{ item.lastSettleDate | formatTransDate }}</view>
+							<view class="repayment-item-day">还款日：{{ item.lastSettleDate || formatTransDate }}</view>
 						</view>
 					</uni-collapse>
 				</view>
@@ -52,6 +49,9 @@
 
 <script setup>
 	import { ref, computed } from 'vue'
+// import { orderRePaymentFlowSchedule } from '@/apis/quota';
+	import { useGammaORPaymentFlowschedule } from '@/mock/index'
+	import moment from "moment";
 
 	const order = ref({})
 	const type = ""
@@ -94,8 +94,9 @@
 		return result;
 	})
 	const currentYearList = computed(() => {
+		console.log(repaymentList.value, 'repaymentList>');
 		return (repaymentList.value || [])
-		.filter(v =>  moment(v.recycleDate).year()==this.currentYear)
+		.filter(v =>  moment(v.recycleDate).year()==currentYear.value)
 	})
 	const formatPayType = computed((val) => {
 		if (!val) {
@@ -107,7 +108,16 @@
 		};
 		return map[val] || val;
 	})
-	
+	const getList = (params) => {
+		console.log('getList', params);
+		const res = useGammaORPaymentFlowschedule()
+		console.log(res , 'res data>');
+	  if (res?.code == '0') {
+		console.log(res.data.recArray, 'res>');
+			repaymentList.value = ( res?.data || {}).recArray || []
+		} 
+	}
+	getList()
 </script>
 
 <style scoped lang="scss">
@@ -150,22 +160,28 @@
 }
 .repayment-list {
   padding: 0.9375rem;
-  .repayment-item {
-    border-radius: 13px;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #ffffff;
-    margin-bottom: 6px;
-    &-child {
-      font-size: 12px;
-      padding: 2px 0;
-    }
-    &-day {
-      font-size: 12px;
-      padding: 0 16px 8px;
-    }
-    // box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); 
-  }
+	:deep(.uni-collapse){
+		border-radius: 13px;
+		background-color: unset;
+		.repayment-item {
+			border-radius: 13px;
+			overflow: hidden;
+			box-sizing: border-box;
+			background: #ffffff;
+			margin-bottom: 10px;
+			&-child {
+				font-size: 12px;
+				padding: 0px 10px;
+				margin: 5px;
+			}
+			&-day {
+				font-size: 12px;
+				// padding: 10px 16px 8px;
+				padding: 10px 15px;
+			}
+			// box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); 
+		}    
+	}
 }
 .data-pick {
   background: #ffffff;

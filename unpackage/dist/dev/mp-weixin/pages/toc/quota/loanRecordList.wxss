@@ -1,13 +1,101 @@
 /* 水平间距 */
 /* 水平间距 */
 .root.data-v-2276cd9c {
+  height: 100%;
+  overflow: auto;
+}
+.root .loan-record-list.data-v-2276cd9c {
+  padding: 0 1rem 1.5rem;
+  margin-top: 26px;
+}
+.loan-record-item.data-v-2276cd9c {
+  border-radius: 16px;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.loan-record-item.overdue.data-v-2276cd9c {
+  background: #FFEFEF;
+}
+.loan-record-item.overdue .loan-record-status.data-v-2276cd9c {
+  border: 1px solid #EEB3B9;
+  color: #DC838E;
+}
+.loan-record-item.overdue .loan-record-button.data-v-2276cd9c {
+  background: rgba(201, 54, 71, 0.06);
+  color: #C93647;
+}
+.loan-record-item.normal.data-v-2276cd9c {
+  background: #e9f2ff;
+}
+.loan-record-item.normal .loan-record-status.data-v-2276cd9c {
+  border: 1px solid #69a5ff;
+  color: #69a5ff;
+}
+.loan-record-item.normal .loan-record-button.data-v-2276cd9c {
+  background: #e0eaff;
+  color: #69a5ff;
+}
+.loan-record-item.success.data-v-2276cd9c {
+  background: #F4FFFA;
+}
+.loan-record-item.success .loan-record-status.data-v-2276cd9c {
+  border: 1px solid #CEEFBD;
+  color: #A2DC85;
+}
+.loan-record-item.success .loan-record-button.data-v-2276cd9c {
+  background: rgba(116, 207, 70, 0.06);
+  color: #68e42a;
+}
+.loan-record-status.data-v-2276cd9c {
+  margin-left: 1.5rem;
+  padding: 0 0.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+.loan-record-amount.data-v-2276cd9c {
+  padding: 0 1.5rem;
+  margin-top: 0.5rem;
   display: flex;
 }
-.text.data-v-2276cd9c {
-  color: #9b9b9b;
-  margin: 20px auto;
+.loan-record-amount .loan-record-amount-item.data-v-2276cd9c:first-child {
+  width: 12.5rem;
 }
-.span.data-v-2276cd9c {
-  height: 23px;
-  display: inline-block;
+.loan-record-amount .loan-record-amount-text.data-v-2276cd9c {
+  font-size: 0.625rem;
+  color: #9B9B9B;
+}
+.loan-record-amount .loan-record-amount-value.data-v-2276cd9c {
+  font-size: 1.5rem;
+  color: #4A4A4A;
+  line-height: 2rem;
+  font-weight: bold;
+}
+.loan-record-info.data-v-2276cd9c {
+  padding: 0 1.5rem 0.75rem;
+  margin-top: 1.25rem;
+}
+.loan-record-info .loan-record-info-item.data-v-2276cd9c {
+  font-size: 0.75rem;
+  color: #9B9B9B;
+  margin-bottom: 0.5rem;
+}
+.loan-record-button.data-v-2276cd9c {
+  display: flex;
+  line-height: 2.5rem;
+  align-items: center;
+  border-radius: 0 0 16px 16px;
+}
+.loan-record-button .loan-record-button-item.data-v-2276cd9c {
+  text-align: center;
+  flex: 1;
+  font-size: 0.8125rem;
+}
+.loan-record-button .loan-record-button-line.data-v-2276cd9c {
+  width: 1px;
+  height: 1.25rem;
+  background: rgba(201, 54, 71, 0.1);
 }

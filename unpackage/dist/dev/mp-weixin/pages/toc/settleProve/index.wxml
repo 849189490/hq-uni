@@ -1,0 +1,1 @@
+<view class="settle-wrapper"><list wx:if="{{e}}" u-s="{{['d']}}" bindload="{{c}}" u-i="273ee572-0" bind:__l="__l" bindupdateModelValue="{{d}}" u-p="{{e}}"><view class="text"><label wx:if="{{a}}" class="span">暂无内容</label><card wx:for="{{b}}" wx:for-item="item" wx:key="a" bindtitleClick="{{item.b}}" u-i="{{item.c}}" bind:__l="__l" u-p="{{item.d}}"/></view></list></view>

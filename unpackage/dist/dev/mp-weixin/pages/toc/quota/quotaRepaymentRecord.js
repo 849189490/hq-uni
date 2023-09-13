@@ -1,5 +1,8 @@
 "use strict";
 const common_vendor = require("../../../common/vendor.js");
+const mock_index = require("../../../mock/index.js");
+require("../../../mock/modules/order-query.data.js");
+require("../../../mock/modules/order-re-payment-flow-schedule.data.js");
 if (!Array) {
   const _easycom_uni_icons2 = common_vendor.resolveComponent("uni-icons");
   const _easycom_uni_collapse_item2 = common_vendor.resolveComponent("uni-collapse-item");
@@ -17,7 +20,7 @@ const _sfc_main = {
   setup(__props) {
     common_vendor.ref({});
     const repaymentList = common_vendor.ref([]);
-    common_vendor.ref(`${(/* @__PURE__ */ new Date()).getFullYear()}`);
+    const currentYear = common_vendor.ref(`${(/* @__PURE__ */ new Date()).getFullYear()}`);
     common_vendor.ref(false);
     const activeNames = common_vendor.ref([]);
     const getDate = (type) => {
@@ -48,7 +51,8 @@ const _sfc_main = {
       return result;
     });
     const currentYearList = common_vendor.computed(() => {
-      return (repaymentList.value || []).filter((v) => moment(v.recycleDate).year() == this.currentYear);
+      console.log(repaymentList.value, "repaymentList>");
+      return (repaymentList.value || []).filter((v) => common_vendor.hooks(v.recycleDate).year() == currentYear.value);
     });
     const formatPayType = common_vendor.computed((val) => {
       if (!val) {
@@ -60,6 +64,16 @@ const _sfc_main = {
       };
       return map[val] || val;
     });
+    const getList = (params) => {
+      console.log("getList", params);
+      const res = mock_index.useGammaORPaymentFlowschedule();
+      console.log(res, "res data>");
+      if ((res == null ? void 0 : res.code) == "0") {
+        console.log(res.data.recArray, "res>");
+        repaymentList.value = ((res == null ? void 0 : res.data) || {}).recArray || [];
+      }
+    };
+    getList();
     return (_ctx, _cache) => {
       return common_vendor.e({
         a: common_vendor.t(date.value),
@@ -110,10 +124,10 @@ const _sfc_main = {
           } : {}, {
             q: "d6b7f0bb-2-" + i0 + ",d6b7f0bb-1",
             r: common_vendor.p({
-              title: "¥" + item.recAmt | _ctx.toThousands,
-              value: item.recycleGenerateMode | common_vendor.unref(formatPayType)
+              title: "¥" + item.recAmt || _ctx.toThousands,
+              value: item.recycleGenerateMode || common_vendor.unref(formatPayType)
             }),
-            s: common_vendor.t(item.lastSettleDate | _ctx.formatTransDate),
+            s: common_vendor.t(item.lastSettleDate || _ctx.formatTransDate),
             t: i
           });
         }),

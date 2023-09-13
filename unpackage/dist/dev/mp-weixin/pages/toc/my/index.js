@@ -57,7 +57,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       {
         icon: "myContract iconBox",
         name: "我的合同",
-        url: "/pages/toc/myCard/index"
+        url: "/pages/toc/my-contract/index"
       },
       {
         icon: "certificate iconBox",

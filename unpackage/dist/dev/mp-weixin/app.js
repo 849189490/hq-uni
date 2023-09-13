@@ -6,12 +6,17 @@ if (!Math) {
   "./pages/toc/my/index.js";
   "./pages/toc/login/index.js";
   "./pages/toc/setting/index.js";
-  "./pages/toc/noLoginHome/index.js";
+  "./pages/toc/no-login-home/index.js";
   "./pages/toc/quota/loanRecordList.js";
   "./pages/toc/quota/quotaRepaymentRecord.js";
   "./pages/toc/quota/payPlan.js";
   "./pages/toc/quota/myCard.js";
-  "./pages/toc/myCard/index.js";
+  "./pages/toc/my-contract/index.js";
+  "./pages/toc/settleProve/index.js";
+  "./pages/toc/bill/index.js";
+  "./pages/toc/show-pdf/index.js";
+  "./pages/toc/pay-plan/index.js";
+  "./pages/toc/quota-repayment-record/index.js";
 }
 const _sfc_main = {
   onLaunch: function() {

@@ -98,7 +98,7 @@
 	}
 	const jumpTo = () => {
 		uni.navigateTo({
-			url: `/pages/toc/noLoginHome/index`
+			url: `/pages/toc/no-login-home/index`
 		});
 	}
 </script>

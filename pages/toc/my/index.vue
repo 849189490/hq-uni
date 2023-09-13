@@ -93,7 +93,7 @@
 		{
 			icon: "myContract iconBox",
 			name: "我的合同",
-			url: "/pages/toc/myCard/index"
+			url: "/pages/toc/my-contract/index"
 		},
 		{
 			icon: "certificate iconBox",

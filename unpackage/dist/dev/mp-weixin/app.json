@@ -4,14 +4,17 @@
     "pages/toc/my/index",
     "pages/toc/login/index",
     "pages/toc/setting/index",
-    "pages/toc/noLoginHome/index",
+    "pages/toc/no-login-home/index",
     "pages/toc/quota/loanRecordList",
     "pages/toc/quota/quotaRepaymentRecord",
     "pages/toc/quota/payPlan",
     "pages/toc/quota/myCard",
-    "pages/toc/myCard/index",
+    "pages/toc/my-contract/index",
     "pages/toc/settleProve/index",
-    "pages/toc/bill/index"
+    "pages/toc/bill/index",
+    "pages/toc/show-pdf/index",
+    "pages/toc/pay-plan/index",
+    "pages/toc/quota-repayment-record/index"
   ],
   "window": {
     "navigationBarTextStyle": "white",

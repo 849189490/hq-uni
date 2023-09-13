@@ -22,7 +22,7 @@ const _sfc_main = {
       if (this.inAndroidApp) {
         closeAllPage();
       } else {
-        this.$router.go(-1);
+        common_vendor.index.navigateBack();
       }
     };
     return (_ctx, _cache) => {
